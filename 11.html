@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Soma dos primos</h3>
+    <script>
+        let n = parseInt(prompt('Digite um numero:'));
+        let soma = 0;
+
+        function verificaPrimo(num) {
+            let i = 2;
+            while (i < num) {
+                if (num % i === 0) return false;
+                i++;
+            }
+            return num > 1;
+        }
+
+        let i = 2;
+        while (i <= n) {
+            if (verificaPrimo(i)) soma += i;
+            i++;
+        }
+
+        document.write('Soma dos primos: ' + soma);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <h3>Testando a média com for</h3>
+
+    <script>
+        let soma = 0;
+
+        for (let n = 1; n <= 5; n++) {
+            let numero = parseFloat(prompt('Digite um número: '));
+            soma += numero;
+        }
+
+        let media = soma / 5;
+        document.write('A média dos números é: ' + media);
+    </script>
+</body>
+</html>

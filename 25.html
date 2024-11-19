@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequência de Fibonacci</title>
+</head>
+<body>
+    <h3>Sequência de Fibonacci</h3>
+    <script>
+        let a = 0;
+        let b = 1;
+
+        document.write('Primeiros 20 números da sequência de Fibonacci:<br>');
+        document.write(a + '<br>');
+
+        for (let contador = 1; contador < 20; contador++) {
+            document.write(b + '<br>');
+
+            let temp = a + b;
+            a = b;
+            b = temp;
+        }
+    </script>
+</body>
+</html>

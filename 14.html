@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Fatorial</h3>
+    <script>
+        let n = parseInt(prompt('Digite um valor: '));
+        
+        while (n <= 0) {
+            n = parseInt(prompt('Digite um valor: '));
+        }
+
+        let fatorial = 1;
+        let i = n;
+
+        while (i > 1) {
+            fatorial *= i;
+            i--;
+        }
+
+        document.write('O fatorial de ' + n + ' é: ' + fatorial);
+    </script>
+</body>
+</html>

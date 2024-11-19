@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Idades</title>
+</head>
+<body>
+    <h3>Média de idades</h3>
+    <script>
+        let somaIdades = 0;
+
+        for (let i = 0; i < 5; i++) {
+            let nome = prompt('Digite um nome: ');
+            let idade;
+
+            do {
+                idade = parseInt(prompt('Digite a idade (maior que 0): '));
+                if (idade <= 0 || isNaN(idade)) {
+                    alert('Idade inválida. Tente novamente.');
+                }
+            } while (idade <= 0 || isNaN(idade));
+
+            document.write('Nome: ' + nome + ' | Idade: ' + idade + ' anos<br>');
+            somaIdades += idade;
+        }
+
+        let media = somaIdades / 5;
+        document.write('<br>Média das idades: ' + media.toFixed(1) + ' anos');
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequência de Fibonacci</title>
+</head>
+<body>
+    <h3>Sequência de números Fibonacci</h3>
+    <script>
+        let limite = parseInt(prompt('Digite um número para a sequência: '));
+        let a = 0;
+        let b = 1;
+
+        document.write('Sequência até ' + limite + ':<br>');
+        document.write(a + '<br>');
+
+        for (; b <= limite; ) {
+            document.write(b + '<br>');
+
+            let temp = a + b;
+            a = b;
+            b = temp;
+        }
+    </script>
+</body>
+</html>
